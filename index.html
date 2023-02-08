@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nav bar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <script src="https://kit.fontawesome.com/342cf64192.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body>
+<!-- anvigation bar -->
+<nav id="navbar" class="d-flex">
+  <div class="d-flex flex-row-reverse gap-4" >
+    <div class="logo"><h1>logo</h1></div>
+    <button id="menu"><i class="fa-solid fa-bars fa-2x"></i></button>
+  </div>
+   <div class="container1" id="menu-content" >
+       <ul >
+           <li class="home active list"><a href="#home">Home</a></li>
+           <li class="blog list"><a href="#blog">Blogs</a> </li>
+           <li class="gallery list"><a href="#gallery">Gallery</a></li>
+           <li class="about list"><a href="#about">About</a></li>
+           <li class="contact list"><a href="#contact">Contact</a></li>
+       </ul>
+   </div>
+   <div class="d-flex align-items-center">
+    <div class="dropdown">
+      <button class="btn btn-outline-info" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        search <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+
+        <div id="myDropdown" class="dropdown-menu p-0">
+          <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+          <a href="#about" class="dropdown-item">About</a>
+          <a href="#base" class="dropdown-item">Base</a>
+         </div>
+
+        <!-- <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul> -->
+    </div>
+    <a href="#login"><button class="button-92" role="button">Login</button></a>
+   </div>
+</nav>
+
+<!-- HTML !-->
+
+
+
+<section id="home" style=" background-repeat: no-repeat; background-position: center; background-size: cover; background-image: url(./pexels-expect-best-323780.jpg);">
+    
+</section>
+<section id="blog" style="background-color: blanchedalmond;">
+    
+</section>
+<section id="gallery" style="background-color: blueviolet;"></section>
+<section id="about" style="background-color: brown;"></section>
+<section id="contact" style="background-color: whitesmoke;"></section>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+   <script src="script.js"></script>
+  </body>
+
+</html>
